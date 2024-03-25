@@ -1,0 +1,280 @@
+/* CSS Styles */
+
+body h2{
+  font-family: Arial, sans-serif;
+  background-color: #e20f98e5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #dc3545;
+}
+
+h2 {
+  color: #007bff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li  {
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.instructions {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+.whatsapp-link a {
+  background-color: #084e22e5; /* WhatsApp green color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.whatsapp-link a:hover {
+  background-color: #128c7e; /* Darker shade of green on hover */
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a0497e;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse; /* Display stars from right to left */
+}
+
+input[type="radio"] {
+  display: none; /* Hide the radio buttons */
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  width: 40px; /* Adjust width and height for star size */
+  height: 40px; /* Adjust width and height for star size */
+  background-image: url('star.jpg'); /* Replace 'star.png' with your star image */
+  background-size: cover;
+}
+
+input[type="radio"]:checked ~ label {
+  background-image: url('star-filled.png'); /* Replace 'star-filled.png' with your filled star image */
+}
+
+
+.footer {
+  background-color: #033114fb; /* Change color as desired */
+  color: white; /* Text color */
+  padding: 40px; /* Add padding for spacing */
+}
+
+h1 {
+  font-family: 'Marcellus', serif;
+}
+
+/* Italic */
+.italic-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+/* Bold */
+.bold-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+/* Applying Titan One font to a specific element */
+.titan-one-text {
+  font-family: 'Titan One', cursive;
+}
+
+
+
+.header {
+  background-color: #c955ac7a;
+  padding: 10px;
+  text-align: right;
+  font-size: 3em;
+}
+
+header-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header-button:hover {
+  background-color: #45a049;
+}
+
+.sign-in-form {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sign-in-form input[type="text"],
+.sign-in-form input[type="password"],
+.sign-in-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.sign-in-form button {
+  background-color: #ba005d57;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sign-in-form button:hover {
+  background-color: #005f79;
+}
+
+.sign-in-link {
+  background-color: #790a5daf; /* Blue color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Show the sign-in form when the link is targeted */
+.sign-in-link:target + .sign-in-form {
+  display: block;
+}
+
+
+.rating-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.rating-stars input[type="radio"] {
+  display: none;
+}
+
+.rating-stars label {
+  display: inline-block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Star*.svg/1117px-Star*.svg.png'); /* Replace '' with your star icon */
+  background-size: cover;
+}
+
+.rating-stars input[type="radio"]:checked + label {
+  background-image: url('star-filled.svg'); /* Replace 'star-filled.svg' with your filled star icon */
+}
